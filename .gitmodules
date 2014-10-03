@@ -1,0 +1,9 @@
+[submodule "SwiftTemplate/Alamofire"]
+	path = SwiftTemplate/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "SwiftTemplate/ENSwiftSideMenu"]
+	path = SwiftTemplate/ENSwiftSideMenu
+	url = https://github.com/evnaz/ENSwiftSideMenu.git
+[submodule "SwiftTemplate/JSONJoy-Swift"]
+	path = SwiftTemplate/JSONJoy-Swift
+	url = https://github.com/daltoniam/JSONJoy-Swift.git
