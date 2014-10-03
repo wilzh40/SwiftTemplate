@@ -12,7 +12,7 @@ class NewsViewController: UITableViewController, UITableViewDelegate, UITableVie
     
     // IBOutlets/IBActions
     @IBOutlet var NewsTableView : UITableView?
-    
+
     
     // Variables
     var tableData: NSMutableArray = Singleton.sharedInstance.bears
@@ -26,8 +26,8 @@ class NewsViewController: UITableViewController, UITableViewDelegate, UITableVie
 
         
         super.viewDidLoad()
-        var menuButton: UIBarButtonItem = UIBarButtonItem(title: "Add Element", style: UIBarButtonItemStyle.Plain, target: self, action:Selector("addElement"))
-        self.parentViewController?.navigationItem.rightBarButtonItem = menuButton
+      //  var menuButton: UIBarButtonItem = UIBarButtonItem(title: "Add Element", style: UIBarButtonItemStyle.Plain, target: self, action:Selector("addElement"))
+       // self.navigationController?.navigationItem.rightBarButtonItem = menuButton
 
     }
 
@@ -65,7 +65,7 @@ class NewsViewController: UITableViewController, UITableViewDelegate, UITableVie
     
     // Display a UIAlert
     
-    func addElement() {
+    @IBAction func addElement() {
         
         var alert = UIAlertController(title: "Add Element", message: "Please", preferredStyle: UIAlertControllerStyle.Alert)
 
@@ -92,7 +92,10 @@ class NewsViewController: UITableViewController, UITableViewDelegate, UITableVie
         self.presentViewController(alert, animated: true, completion: nil)
 }
     
-    
+    @IBAction func toggleSideMenu(sender: AnyObject) {
+        toggleSideMenuView()
+    }
+
     
  
     
@@ -101,9 +104,6 @@ class NewsViewController: UITableViewController, UITableViewDelegate, UITableVie
         NSLog("ViewController1 deinits")
     }
     
-    @IBAction func toggleSideMenu(sender: AnyObject) {
-        toggleSideMenuView()
-    }
-
+ 
 }
 

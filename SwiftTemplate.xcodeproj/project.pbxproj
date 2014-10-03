@@ -635,6 +635,7 @@
 				77D56D2119DF0F2100D1F20E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77D56D2219DF0F2100D1F20E /* Build configuration list for PBXNativeTarget "SwiftTemplateTests" */ = {
 			isa = XCConfigurationList;
@@ -643,6 +644,7 @@
 				77D56D2419DF0F2100D1F20E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

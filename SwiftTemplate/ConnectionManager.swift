@@ -58,7 +58,6 @@ class ConnectionManager {
                     Singleton.sharedInstance.bears.addObject(Bear(JSONDecoder(data)))
                 }
         
-    
                 Singleton.sharedInstance.delegate?.didGetBears!()
             } else {
                 println(error)
